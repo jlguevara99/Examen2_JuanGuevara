@@ -5,11 +5,13 @@
  */
 package examen.pkg2_juanguevara.p2;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HP
  */
-public class Alumno {
+public class Alumno implements Serializable{
     public String apodo;
     public String NmoCuenta;
     public int edad;
@@ -18,6 +20,7 @@ public class Alumno {
     public String arma;
     public int poder;
 
+    private static final long SerialVersionUID = 888L;
     public Alumno() {
     }
 
@@ -85,6 +88,11 @@ public class Alumno {
 
     public void setPoder(int poder) {
         this.poder = poder;
+    }
+
+    @Override
+    public String toString() {
+        return apodo;
     }
     
 }

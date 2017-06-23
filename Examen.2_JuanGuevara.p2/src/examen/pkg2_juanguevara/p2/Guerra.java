@@ -7,6 +7,8 @@ package examen.pkg2_juanguevara.p2;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
@@ -33,6 +35,55 @@ public class Guerra extends javax.swing.JFrame {
         armarus = new javax.swing.ButtonGroup();
         armaale = new javax.swing.ButtonGroup();
         aluarmas = new javax.swing.ButtonGroup();
+        menu = new javax.swing.JPopupMenu();
+        eliminar = new javax.swing.JMenuItem();
+        modificar = new javax.swing.JMenuItem();
+        Rusos = new javax.swing.JDialog();
+        jLabel15 = new javax.swing.JLabel();
+        nom = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        ed = new javax.swing.JTextField();
+        id = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        ran = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
+        ak1 = new javax.swing.JRadioButton();
+        rev1 = new javax.swing.JRadioButton();
+        rpg1 = new javax.swing.JRadioButton();
+        jLabel29 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        Alemanes = new javax.swing.JDialog();
+        jLabel20 = new javax.swing.JLabel();
+        alias1 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        al_edad1 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        casta1 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        mp1 = new javax.swing.JRadioButton();
+        mg1 = new javax.swing.JRadioButton();
+        P39 = new javax.swing.JRadioButton();
+        jLabel30 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        Alumnos = new javax.swing.JDialog();
+        jLabel24 = new javax.swing.JLabel();
+        apodo1 = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        cuentas1 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        alu_edad1 = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        grado1 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        disco1 = new javax.swing.JRadioButton();
+        control1 = new javax.swing.JRadioButton();
+        lap1 = new javax.swing.JRadioButton();
+        jLabel31 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        ru = new javax.swing.ButtonGroup();
+        ale = new javax.swing.ButtonGroup();
+        aluu = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -77,6 +128,341 @@ public class Guerra extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         arbol = new javax.swing.JTree();
+        jButton8 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        ganador = new javax.swing.JLabel();
+
+        eliminar.setText("Eliminar Soldado");
+        eliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminarActionPerformed(evt);
+            }
+        });
+        menu.add(eliminar);
+
+        modificar.setText("Modificar");
+        modificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificarActionPerformed(evt);
+            }
+        });
+        menu.add(modificar);
+
+        jLabel15.setText("Nombre");
+
+        jLabel16.setText("Edad");
+
+        jLabel17.setText("ID");
+
+        jLabel18.setText("Rango");
+
+        jLabel19.setText("Armas");
+
+        ru.add(ak1);
+        ak1.setSelected(true);
+        ak1.setText("AK 47");
+
+        ru.add(rev1);
+        rev1.setText("Revolver");
+
+        ru.add(rpg1);
+        rpg1.setText("RPG-7");
+        rpg1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rpg1ActionPerformed(evt);
+            }
+        });
+
+        jLabel29.setText("Rusos");
+
+        jButton5.setText("Modificar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RusosLayout = new javax.swing.GroupLayout(Rusos.getContentPane());
+        Rusos.getContentPane().setLayout(RusosLayout);
+        RusosLayout.setHorizontalGroup(
+            RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RusosLayout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addComponent(jLabel29)
+                .addContainerGap(196, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RusosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addContainerGap())
+            .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RusosLayout.createSequentialGroup()
+                    .addGap(79, 79, 79)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel15)
+                        .addComponent(jLabel16)
+                        .addComponent(jLabel17)
+                        .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18)))
+                    .addGap(32, 32, 32)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(RusosLayout.createSequentialGroup()
+                            .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(rev1)
+                                .addComponent(ak1)
+                                .addComponent(rpg1))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nom)
+                            .addComponent(ed)
+                            .addComponent(id)
+                            .addComponent(ran)))
+                    .addGap(80, 80, 80)))
+        );
+        RusosLayout.setVerticalGroup(
+            RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RusosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 261, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addContainerGap())
+            .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RusosLayout.createSequentialGroup()
+                    .addGap(41, 41, 41)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel15)
+                        .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel16)
+                        .addComponent(ed, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel17)
+                        .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel18)
+                        .addComponent(ran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(28, 28, 28)
+                    .addGroup(RusosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ak1)
+                        .addComponent(jLabel19))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(rev1)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(rpg1)
+                    .addContainerGap(42, Short.MAX_VALUE)))
+        );
+
+        jLabel20.setText("Alias");
+
+        jLabel21.setText("Edad");
+
+        jLabel22.setText("Casta");
+
+        jLabel23.setText("Armas");
+
+        ale.add(mp1);
+        mp1.setSelected(true);
+        mp1.setText("MP 40");
+
+        ale.add(mg1);
+        mg1.setText("MG 42");
+
+        ale.add(P39);
+        P39.setText("P38");
+        P39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                P39ActionPerformed(evt);
+            }
+        });
+
+        jLabel30.setText("Aleman");
+
+        jButton6.setText("Modificar");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AlemanesLayout = new javax.swing.GroupLayout(Alemanes.getContentPane());
+        Alemanes.getContentPane().setLayout(AlemanesLayout);
+        AlemanesLayout.setHorizontalGroup(
+            AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlemanesLayout.createSequentialGroup()
+                .addGap(167, 167, 167)
+                .addComponent(jLabel30)
+                .addContainerGap(198, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AlemanesLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addContainerGap())
+            .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AlemanesLayout.createSequentialGroup()
+                    .addGap(70, 70, 70)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel20)
+                        .addComponent(jLabel21)
+                        .addComponent(jLabel22)
+                        .addGroup(AlemanesLayout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addComponent(jLabel23)))
+                    .addGap(32, 32, 32)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AlemanesLayout.createSequentialGroup()
+                            .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(mg1)
+                                .addComponent(mp1)
+                                .addComponent(P39))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(alias1)
+                            .addComponent(al_edad1)
+                            .addComponent(casta1)))
+                    .addGap(70, 70, 70)))
+        );
+        AlemanesLayout.setVerticalGroup(
+            AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlemanesLayout.createSequentialGroup()
+                .addComponent(jLabel30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 252, Short.MAX_VALUE)
+                .addComponent(jButton6)
+                .addContainerGap())
+            .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AlemanesLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel20)
+                        .addComponent(alias1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel21)
+                        .addComponent(al_edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel22)
+                        .addComponent(casta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(66, 66, 66)
+                    .addGroup(AlemanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(mp1)
+                        .addComponent(jLabel23))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(mg1)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(P39)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
+
+        jLabel24.setText("Apodo");
+
+        jLabel25.setText("# de cuenta");
+
+        jLabel26.setText("Edad");
+
+        jLabel27.setText("Grado academico");
+
+        jLabel28.setText("Armas");
+
+        aluu.add(disco1);
+        disco1.setSelected(true);
+        disco1.setText("Disco duro");
+
+        aluu.add(control1);
+        control1.setText("Control de wii");
+
+        aluu.add(lap1);
+        lap1.setText("Laptop");
+        lap1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lap1ActionPerformed(evt);
+            }
+        });
+
+        jLabel31.setText("Alumno");
+
+        jButton7.setText("Modificar");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AlumnosLayout = new javax.swing.GroupLayout(Alumnos.getContentPane());
+        Alumnos.getContentPane().setLayout(AlumnosLayout);
+        AlumnosLayout.setHorizontalGroup(
+            AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlumnosLayout.createSequentialGroup()
+                .addGap(164, 164, 164)
+                .addComponent(jLabel31)
+                .addContainerGap(201, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AlumnosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addContainerGap())
+            .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AlumnosLayout.createSequentialGroup()
+                    .addGap(55, 55, 55)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AlumnosLayout.createSequentialGroup()
+                            .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel24)
+                                .addComponent(jLabel25)
+                                .addComponent(jLabel26)
+                                .addComponent(jLabel27))
+                            .addGap(32, 32, 32)
+                            .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(cuentas1, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
+                                .addComponent(alu_edad1, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(grado1, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(apodo1)))
+                        .addGroup(AlumnosLayout.createSequentialGroup()
+                            .addComponent(jLabel28)
+                            .addGap(18, 18, 18)
+                            .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(control1, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(disco1, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lap1, javax.swing.GroupLayout.Alignment.LEADING))))
+                    .addContainerGap(55, Short.MAX_VALUE)))
+        );
+        AlumnosLayout.setVerticalGroup(
+            AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlumnosLayout.createSequentialGroup()
+                .addComponent(jLabel31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 252, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addContainerGap())
+            .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AlumnosLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel24)
+                        .addComponent(apodo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel25)
+                        .addComponent(cuentas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel26)
+                        .addComponent(alu_edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel27)
+                        .addComponent(grado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(28, 28, 28)
+                    .addGroup(AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(disco1)
+                        .addComponent(jLabel28))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(control1)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(lap1)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,6 +475,7 @@ public class Guerra extends javax.swing.JFrame {
         jLabel1.setText("Nombre");
 
         armarus.add(ak);
+        ak.setSelected(true);
         ak.setText("AK 47");
 
         armarus.add(rev);
@@ -171,7 +558,7 @@ public class Guerra extends javax.swing.JFrame {
                 .addComponent(rev)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rpg)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(19, 19, 19))
         );
@@ -187,6 +574,7 @@ public class Guerra extends javax.swing.JFrame {
         jLabel10.setText("Armas");
 
         armaale.add(mp);
+        mp.setSelected(true);
         mp.setText("MP 40");
 
         armaale.add(mg);
@@ -262,7 +650,7 @@ public class Guerra extends javax.swing.JFrame {
                 .addComponent(mg)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P38)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(23, 23, 23))
         );
@@ -280,6 +668,7 @@ public class Guerra extends javax.swing.JFrame {
         jLabel14.setText("Armas");
 
         aluarmas.add(disco);
+        disco.setSelected(true);
         disco.setText("Disco duro");
 
         aluarmas.add(control);
@@ -359,7 +748,7 @@ public class Guerra extends javax.swing.JFrame {
                 .addComponent(control)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lap)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -368,26 +757,77 @@ public class Guerra extends javax.swing.JFrame {
 
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Ejercitos");
         arbol.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        arbol.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                arbolMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(arbol);
+
+        jButton8.setText("Cargar");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(341, Short.MAX_VALUE))
+                .addGap(146, 146, 146)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton8)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lista de Soldados", jPanel4);
+
+        jButton4.setText("Simular");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+
+        ganador.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ganador.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jButton4))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(ganador, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(215, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(ganador, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(30, 30, 30))
+        );
+
+        jTabbedPane1.addTab("Simulacion", jPanel5);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -447,6 +887,13 @@ public class Guerra extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "No tiene suficiente edad");
             } else {
                 rusos.add(new Ruso(edad, id, nombre, resistencia, arma, rango, poder));
+                Binario b = new Binario("./Datos.jlg");
+
+                //Cargar al archivo
+                b.cargarArchivo();
+                b.setcosas(new Ruso(edad, id, nombre, resistencia, arma, rango, poder));
+                b.escribirArchivo();
+
                 JOptionPane.showMessageDialog(this, "Soldado Ruso Agregado");
                 ru_nombre.setText("");
                 ru_id.setText("");
@@ -461,32 +908,39 @@ public class Guerra extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        
+
         String ali = "", cas = "", arma = "";
-        int edad = 0, poder = 0,resistencia = 0;
+        int edad = 0, poder = 0, resistencia = 0;
         try {
             ali = alias.getText();
             cas = casta.getText();
             if (this.mp.isSelected()) {
                 arma = "MP 40";
                 poder = 25;
-            }else if(this.mg.isSelected()){
+            } else if (this.mg.isSelected()) {
                 arma = "MG 42";
                 poder = 32;
-            }else{
+            } else {
                 arma = "P38";
                 poder = 11;
             }
             edad = Integer.parseInt(this.al_edad.getText());
             resistencia = edad * 8;
-            
-            alemanes.add(new Aleman(ali,edad,cas,resistencia,arma,poder));
+
+            alemanes.add(new Aleman(ali, edad, cas, resistencia, arma, poder));
+            Binario b = new Binario("./Datos.jlg");
+
+            //Cargar al archivo
+            b.cargarArchivo();
+            b.setcosas(new Aleman(ali, edad, cas, resistencia, arma, poder));
+            b.escribirArchivo();
+
             JOptionPane.showMessageDialog(this, "Soldado Aleman agregado");
             alias.setText("");
             casta.setText("");
             al_edad.setText("");
             mp.setSelected(true);
-            
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "No se pudo agregar al soldado");
         }
@@ -495,33 +949,369 @@ public class Guerra extends javax.swing.JFrame {
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
         try {
-        String ap ="", num = "", grad = "", arma ="";
-        int edad = Integer.parseInt(al_edad.getText());
-        ap = apodo.getText();
-        num = this.cuentas.getText();
-        grad = grado.getText();
-        int resistencia = edad * 8;
-        int poder = 0;
+            String ap = "", num = "", grad = "", arma = "";
+            int edad = Integer.parseInt(alu_edad.getText());
+            ap = apodo.getText();
+            num = this.cuentas.getText();
+            grad = grado.getText();
+            int resistencia = edad * 8;
+            int poder = 0;
             if (this.disco.isSelected()) {
                 arma = "Disco duro";
                 poder = 23;
-            }else if(this.control.isSelected()){
+            } else if (this.control.isSelected()) {
                 arma = "Control de Wii";
                 poder = 47;
-            }else{
+            } else {
                 arma = "Laptop";
                 poder = 76;
             }
             if (edad < 16) {
                 JOptionPane.showMessageDialog(this, "NO tiene edad suficiente");
-            }else{
-                alumnos.add(new Alumno(ap,num,edad,resistencia,grad,arma,poder));
+            } else {
+                alumnos.add(new Alumno(ap, num, edad, resistencia, grad, arma, poder));
+                Binario b = new Binario("./Datos.jlg");
+
+                //Cargar al archivo
+                b.cargarArchivo();
+                b.setcosas(new Alumno(ap, num, edad, resistencia, grad, arma, poder));
+                b.escribirArchivo();
                 JOptionPane.showMessageDialog(this, "Alumno Agregado");
+                apodo.setText("");
+                alu_edad.setText("");
+                cuentas.setText("");
+                disco.setSelected(true);
+                grado.setText("");
             }
-            
+
         } catch (Exception e) {
+
+            JOptionPane.showMessageDialog(this, "Error");
         }
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void arbolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_arbolMouseClicked
+        // TODO add your handling code here:
+        if (evt.isMetaDown()) {
+            int fila = arbol.getClosestRowForLocation(evt.getX(), evt.getY());
+            arbol.setSelectionRow(fila);
+            Object v1 = arbol.getSelectionPath().getLastPathComponent();
+            nodo = (DefaultMutableTreeNode) v1;
+            if (nodo.getUserObject() instanceof Ruso) {
+                soldier = (Ruso) nodo.getUserObject();
+                menu.show(evt.getComponent(), evt.getX(), evt.getY());
+            } else if (nodo.getUserObject() instanceof Aleman) {
+                soldier = (Aleman) nodo.getUserObject();
+                menu.show(evt.getComponent(), evt.getX(), evt.getY());
+            } else if (nodo.getUserObject() instanceof Alumno) {
+                soldier = (Alumno) nodo.getUserObject();
+                menu.show(evt.getComponent(), evt.getX(), evt.getY());
+            }
+        }
+    }//GEN-LAST:event_arbolMouseClicked
+
+    private void eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarActionPerformed
+        // TODO add your handling code here:
+        DefaultTreeModel m = (DefaultTreeModel) arbol.getModel();
+        m.removeNodeFromParent(nodo);
+        m.reload();
+        Binario b = new Binario("./Datos.jlg");
+        b.cargarArchivo();
+        for (int i = 0; i < b.getLista().size(); i++) {
+            if (b.getLista().get(i) == soldier) {
+                b.getLista().remove(i);
+            }
+        }
+    }//GEN-LAST:event_eliminarActionPerformed
+
+    private void rpg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rpg1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rpg1ActionPerformed
+
+    private void P39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_P39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_P39ActionPerformed
+
+    private void lap1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lap1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lap1ActionPerformed
+
+    private void modificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificarActionPerformed
+        // TODO add your handling code here:
+        if (nodo.getUserObject() instanceof Ruso) {
+            Rusos.setModal(true);
+            Rusos.pack();
+            Rusos.setLocationRelativeTo(this);
+            Rusos.setVisible(true);
+        } else if (nodo.getUserObject() instanceof Aleman) {
+            Alemanes.setModal(true);
+            Alemanes.pack();
+            Alemanes.setLocationRelativeTo(this);
+            Alemanes.setVisible(true);
+        } else if (nodo.getUserObject() instanceof Alumno) {
+            Alumnos.setModal(true);
+            Alumnos.pack();
+            Alumnos.setLocationRelativeTo(this);
+            Alumnos.setVisible(true);
+        }
+    }//GEN-LAST:event_modificarActionPerformed
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        // TODO add your handling code here:
+        try {
+            String n = nom.getText();
+            int e = Integer.parseInt(ed.getText());
+            String in = id.getText();
+            String arma;
+            String ra = ran.getText();
+            int poder = 0;
+            if (ak1.isSelected()) {
+                arma = "AK 47";
+                poder = 27;
+            } else if (rev.isSelected()) {
+                arma = "Revolver";
+                poder = 13;
+            } else {
+                arma = "RPG-7";
+                poder = 57;
+            }
+            int resistencia = e * 2;
+            for (int i = 0; i < rusos.size(); i++) {
+                if (rusos.get(i) == (Ruso) nodo.getUserObject()) {
+                    rusos.get(i).setArma(arma);
+                    rusos.get(i).setPoder(poder);
+                    rusos.get(i).setRango(ra);
+                    rusos.get(i).setID(in);
+                    rusos.get(i).setResistencia(resistencia);
+                    rusos.get(i).setNombre(n);
+                    rusos.get(i).setEdad(e);
+                }
+                Binario b = new Binario("./Datos.jlg");
+
+                //Cargar al archivo
+                b.cargarArchivo();
+                for (int j = 0; j < b.getLista().size(); j++) {
+                    if (b.getLista().get(i) == soldier) {
+                        ((Ruso) b.getLista().get(i)).setArma(arma);
+                        ((Ruso) b.getLista().get(i)).setEdad(e);
+                        ((Ruso) b.getLista().get(i)).setID(in);
+                        ((Ruso) b.getLista().get(i)).setNombre(ra);
+                        ((Ruso) b.getLista().get(i)).setPoder(poder);
+                        ((Ruso) b.getLista().get(i)).setRango(ra);
+                        ((Ruso) b.getLista().get(i)).setResistencia(resistencia);
+                    }
+                }
+                b.escribirArchivo();
+                nom.setText("");
+                ed.setText("");
+                id.setText("");
+                ran.setText(in);
+                JOptionPane.showMessageDialog(this, "Soldado modificado");
+                Rusos.setVisible(false);
+            }
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        // TODO add your handling code here:
+        String ali = "", cas = "", arma = "";
+        int edad = 0, poder = 0, resistencia = 0;
+        try {
+            ali = alias1.getText();
+            cas = casta1.getText();
+            if (this.mp1.isSelected()) {
+                arma = "MP 40";
+                poder = 25;
+            } else if (this.mg1.isSelected()) {
+                arma = "MG 42";
+                poder = 32;
+            } else {
+                arma = "P38";
+                poder = 11;
+            }
+            edad = Integer.parseInt(this.al_edad1.getText());
+            resistencia = edad * 8;
+            for (int i = 0; i < alemanes.size(); i++) {
+                if (alemanes.get(i) == (Aleman) nodo.getUserObject()) {
+                    alemanes.get(i).setAlias(ali);
+                    alemanes.get(i).setArma(arma);
+                    alemanes.get(i).setCasta(cas);
+                    alemanes.get(i).setEdad(edad);
+                    alemanes.get(i).setPoder(poder);
+                    alemanes.get(i).setResistencia(resistencia);
+                }
+            }
+            Binario b = new Binario("./Datos.jlg");
+            b.cargarArchivo();
+            for (int i = 0; i < b.getLista().size(); i++) {
+                if (b.getLista().get(i) == soldier) {
+                    ((Aleman) b.getLista().get(i)).setAlias(ali);
+                    ((Aleman) b.getLista().get(i)).setArma(arma);
+                    ((Aleman) b.getLista().get(i)).setCasta(cas);
+                    ((Aleman) b.getLista().get(i)).setEdad(edad);
+                    ((Aleman) b.getLista().get(i)).setPoder(poder);
+                    ((Aleman) b.getLista().get(i)).setResistencia(resistencia);
+                }
+            }
+            b.escribirArchivo();
+
+            JOptionPane.showMessageDialog(this, "Soldado Aleman modificado");
+            alias1.setText("");
+            casta1.setText("");
+            al_edad1.setText("");
+            mp1.setSelected(true);
+            Alemanes.setVisible(false);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "No se pudo");
+        }
+
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        // TODO add your handling code here:
+        try {
+            String ap = "", num = "", grad = "", arma = "";
+            int edad = Integer.parseInt(alu_edad1.getText());
+            ap = apodo1.getText();
+            num = this.cuentas1.getText();
+            grad = grado1.getText();
+            int resistencia = edad * 8;
+            int poder = 0;
+            if (this.disco1.isSelected()) {
+                arma = "Disco duro";
+                poder = 23;
+            } else if (this.control1.isSelected()) {
+                arma = "Control de Wii";
+                poder = 47;
+            } else {
+                arma = "Laptop";
+                poder = 76;
+            }
+            if (edad < 16) {
+                JOptionPane.showMessageDialog(this, "NO tiene edad suficiente");
+            } else {
+                for (int i = 0; i < alumnos.size(); i++) {
+                    if (alumnos.get(i) == (Alumno) nodo.getUserObject()) {
+                        alumnos.get(i).setApodo(ap);
+                        alumnos.get(i).setArma(arma);
+                        alumnos.get(i).setEdad(edad);
+                        alumnos.get(i).setGradAcademico(grad);
+                        alumnos.get(i).setNmoCuenta(num);
+                        alumnos.get(i).setPoder(poder);
+                        alumnos.get(i).setResistencia(resistencia);
+                    }
+                }
+                Binario b = new Binario("./Datos.jlg");
+                b.cargarArchivo();
+                for (int i = 0; i < b.getLista().size(); i++) {
+                    if (b.getLista().get(i) == soldier) {
+                        ((Alumno) b.getLista().get(i)).setApodo(ap);
+                        ((Alumno) b.getLista().get(i)).setArma(arma);
+                        ((Alumno) b.getLista().get(i)).setEdad(edad);
+                        ((Alumno) b.getLista().get(i)).setGradAcademico(grad);
+//                        ((Alumno)b.getLista().get(i)).setGradAcademico(grad);
+                        ((Alumno) b.getLista().get(i)).setPoder(poder);
+                        ((Alumno) b.getLista().get(i)).setResistencia(resistencia);
+                    }
+                }
+                b.escribirArchivo();
+                JOptionPane.showMessageDialog(this, "Alumno Agregado");
+                apodo1.setText("");
+                al_edad1.setText("");
+                cuentas1.setText("");
+                disco1.setSelected(true);
+                Alumnos.setVisible(false);
+            }
+
+        } catch (Exception e) {
+
+            JOptionPane.showMessageDialog(this, "Error");
+        }
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        // TODO add your handling code here:
+        
+        DefaultTreeModel m = (DefaultTreeModel) arbol.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode) m.getRoot();
+        DefaultMutableTreeNode a = new DefaultMutableTreeNode("Ejercito Ruso");
+        DefaultMutableTreeNode b = new DefaultMutableTreeNode("Ejercito Aleman");
+        DefaultMutableTreeNode c = new DefaultMutableTreeNode("Alumnos");
+        raiz.removeAllChildren();
+        Binario be = new Binario("./Datos.jlg");
+        be.cargarArchivo();
+        rusos = new ArrayList();
+        alemanes = new ArrayList();
+        alumnos = new ArrayList();
+        for (int i = 0; i < be.getLista().size(); i++) {
+            if (be.getLista().get(i) instanceof Ruso) {
+                DefaultMutableTreeNode x = new DefaultMutableTreeNode(be.getLista().get(i));
+                a.add(x);
+                rusos.add(((Ruso)be.getLista().get(i)));
+            }else if(be.getLista().get(i) instanceof Aleman){
+                DefaultMutableTreeNode x = new DefaultMutableTreeNode(be.getLista().get(i));
+                b.add(x);
+                alemanes.add(((Aleman)be.getLista().get(i)));
+            }else{
+                DefaultMutableTreeNode x = new DefaultMutableTreeNode(be.getLista().get(i));
+                c.add(x);
+                alumnos.add(((Alumno)be.getLista().get(i)));
+            }
+        }
+        raiz.add(a);
+        raiz.add(b);
+        raiz.add(c);
+        m.reload();
+
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        // TODO add your handling code here:
+         
+                    int ataque = 0,
+                     vida1,
+                     nuevaSalud;
+                    boolean gane = true, gane2 = true;
+                    do {
+                        for (int i = 0; i < rusos.size(); i++) {
+                            if (i < alemanes.size()-1) {
+                                ataque = rusos.get(i).getPoder();
+                                vida1 = alemanes.get(i).getResistencia();
+                                nuevaSalud = vida1-ataque;
+                                alemanes.get(i).setResistencia(nuevaSalud);
+                            }else if(i == alemanes.size()-1){
+                                ataque = rusos.get(i).getPoder();
+                                vida1 = alemanes.get(alemanes.size()-1).getResistencia();
+                                nuevaSalud = vida1-ataque;
+                                alemanes.get(alemanes.size()-1).setResistencia(nuevaSalud);
+                            }else if (alemanes.isEmpty()){
+                                System.out.println("El ejercito aleman ha muerto");
+                                gane = false;
+                            }
+                            for (int j = 0; j < alemanes.size(); j++) {
+                                if (alemanes.get(j).getResistencia()<=0) {
+                                    alemanes.remove(j);
+                                }
+                            }
+                             if (i < alumnos.size()-1) {
+                                ataque = rusos.get(i).getPoder();
+                                vida1 = alumnos.get(i).getResistencia();
+                                nuevaSalud = vida1-ataque;
+                                alumnos.get(i).setResistencia(nuevaSalud);
+                            }else if(i == alumnos.size()-1){
+                                ataque = rusos.get(i).getPoder();
+                                vida1 = alumnos.get(alumnos.size()-1).getResistencia();
+                                nuevaSalud = vida1-ataque;
+                                alumnos.get(alumnos.size()-1).setResistencia(nuevaSalud);
+                            }else if (alumnos.isEmpty()){
+                                System.out.println("El ejercito alumnos ha muerto");
+                                gane2 = false;
+                            }
+                        }
+                    } while (gane && gane2);
+                    ganador.setText("GANAN LOS RUSOS");
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -534,7 +1324,7 @@ public class Guerra extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -559,32 +1349,74 @@ public class Guerra extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Alemanes;
+    private javax.swing.JDialog Alumnos;
     private javax.swing.JRadioButton P38;
+    private javax.swing.JRadioButton P39;
+    private javax.swing.JDialog Rusos;
     private javax.swing.JRadioButton ak;
+    private javax.swing.JRadioButton ak1;
     private javax.swing.JTextField al_edad;
+    private javax.swing.JTextField al_edad1;
+    private javax.swing.ButtonGroup ale;
     private javax.swing.JTextField alias;
+    private javax.swing.JTextField alias1;
     private javax.swing.JTextField alu_edad;
+    private javax.swing.JTextField alu_edad1;
     private javax.swing.ButtonGroup aluarmas;
+    private javax.swing.ButtonGroup aluu;
     private javax.swing.JTextField apodo;
+    private javax.swing.JTextField apodo1;
     private javax.swing.JTree arbol;
     private javax.swing.ButtonGroup armaale;
     private javax.swing.ButtonGroup armarus;
     private javax.swing.JTextField casta;
+    private javax.swing.JTextField casta1;
     private javax.swing.JRadioButton control;
+    private javax.swing.JRadioButton control1;
     private javax.swing.JTextField cuentas;
+    private javax.swing.JTextField cuentas1;
     private javax.swing.JRadioButton disco;
+    private javax.swing.JRadioButton disco1;
+    private javax.swing.JTextField ed;
+    private javax.swing.JMenuItem eliminar;
+    private javax.swing.JLabel ganador;
     private javax.swing.JTextField grado;
+    private javax.swing.JTextField grado1;
+    private javax.swing.JTextField id;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -595,13 +1427,24 @@ public class Guerra extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JRadioButton lap;
+    private javax.swing.JRadioButton lap1;
+    private javax.swing.JPopupMenu menu;
     private javax.swing.JRadioButton mg;
+    private javax.swing.JRadioButton mg1;
+    private javax.swing.JMenuItem modificar;
     private javax.swing.JRadioButton mp;
+    private javax.swing.JRadioButton mp1;
+    private javax.swing.JTextField nom;
+    private javax.swing.JTextField ran;
     private javax.swing.JRadioButton rev;
+    private javax.swing.JRadioButton rev1;
     private javax.swing.JRadioButton rpg;
+    private javax.swing.JRadioButton rpg1;
+    private javax.swing.ButtonGroup ru;
     private javax.swing.JTextField ru_edad;
     private javax.swing.JTextField ru_id;
     private javax.swing.JTextField ru_nombre;
@@ -610,4 +1453,6 @@ public class Guerra extends javax.swing.JFrame {
 ArrayList<Ruso> rusos = new ArrayList();
     ArrayList<Aleman> alemanes = new ArrayList();
     ArrayList<Alumno> alumnos = new ArrayList();
+    DefaultMutableTreeNode nodo;
+    Object soldier;
 }

@@ -5,11 +5,13 @@
  */
 package examen.pkg2_juanguevara.p2;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HP
  */
-public class Aleman {
+public class Aleman implements Serializable{
     public String alias;
     public int edad;
     public String casta;
@@ -17,6 +19,7 @@ public class Aleman {
     public String arma;
     public int poder;
 
+    private static final long SerialVersionUID = 777L;
     public Aleman() {
     }
 
@@ -75,6 +78,11 @@ public class Aleman {
 
     public void setPoder(int poder) {
         this.poder = poder;
+    }
+
+    @Override
+    public String toString() {
+        return alias;
     }
     
 }
