@@ -1268,7 +1268,7 @@ public class Guerra extends javax.swing.JFrame {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-         
+         /*
                     int ataque = 0,
                      vida1,
                      nuevaSalud;
@@ -1310,7 +1310,7 @@ public class Guerra extends javax.swing.JFrame {
                             }
                         }
                     } while (gane && gane2);
-                    ganador.setText("GANAN LOS RUSOS");
+                    ganador.setText("GANAN LOS RUSOS");*/
     }//GEN-LAST:event_jButton4MouseClicked
 
     /**
